@@ -9,6 +9,7 @@ def isPrime(n):
 
 print(isPrime(7))
 print(isPrime(19))
+
 #funckija prime_in_range()
 def primes_in_range(start, end):
     prosti = []
