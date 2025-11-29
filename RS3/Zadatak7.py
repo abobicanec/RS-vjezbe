@@ -26,3 +26,11 @@ async def main():
 
 # Pokretanje event loop-a i glavne korutine
 asyncio.run(main())
+
+#Objašnjenje korak po korak kako radi event loop
+#1. Pokreće se asyncio.run(main())
+#2. U main funkciji se kreiraju taskovi
+#3. Pokreće se izvođenje await asyncio.gather(*timers)
+#4. Korutine počinju sa izvršavanjem
+#5. nakon sleep svaki task nastavlja sa izvođenjem
+#6. Kada svi taskovi se završe main() završava i Event loop se zatvara i program završava

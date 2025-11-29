@@ -22,3 +22,6 @@ t2 = time.perf_counter()
 
 print(rezultat)
 print(f"Vrijeme izvođenja {t2 - t1:.2f} sekunde")
+
+#time je objašnjeno da se može, dakle Task (crate_task(fetch_data(2)) stavlja task u schedule,
+#on neće stati sve dok se svi taskovi ne odrade zato se i pojavljujet teskt "Dovršio sam s 2" iako nije odrađen aweit task 2
